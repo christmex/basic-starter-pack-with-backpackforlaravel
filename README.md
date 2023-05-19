@@ -26,7 +26,8 @@ composer install
 ```bash
 php artisan key:generate
 ```
-6. Login [Your-url]/admin, you can find the credential inside seeder
+6. run ``` php artisan migrate --seed ``` to create the table and insert the default credential
+7. Login [Your-url]/admin, you can find the credential inside seeder
 
 <br>
 Easy right? you found any errors or any questions, let me know guys, cheers.
