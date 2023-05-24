@@ -2,9 +2,10 @@
 
 ## About This Project
 
-This lightweight starterd pack providing your project using backpackforlaravel with permission manager by spatie
+This lightweight starterd pack providing your project using backpackforlaravel with backpack permission
 
 - [Laravel](https://laravel.com/docs/).
+- [Backpack Permission](https://github.com/Laravel-Backpack/PermissionManager)
 - [Backpack for laravel](https://backpackforlaravel.com/docs/5.x/installation).
 - [Spatie laravel Permission](https://spatie.be/docs/laravel-permission/v5/installation-laravel).
 
