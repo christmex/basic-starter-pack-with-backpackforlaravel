@@ -15,6 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         try {
+            // Reset cached roles and permissions
+            app()[\Spatie\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
+            
             $role = Role::firstOrCreate(['name' => 'administrator']);
             $permission = Permission::firstOrCreate(['name' => 'manage all']);
             $role->givePermissionTo('manage all');
