@@ -47,3 +47,7 @@ Easy right? you found any errors or any questions, let me know guys, cheers.
 - [x] Defining a super admin [reference](https://spatie.be/docs/laravel-permission/v5/basic-usage/super-admin)
 - [x] Add Post CRUD example
 - [ ] Add PostPolicy for example, and authorize everything
+
+
+## Notes
+- more about Policy (here)[https://github.com/drbyte/spatie-permissions-demo/blob/master/app/Policies/PostPolicy.php]

@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             app()[\Spatie\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
             
             $role = Role::Create(['name' => 'Super Admin']);
+            $permission = Permission::Create(['name' => 'posts.view']);
 
             $super_admin = \App\Models\User::Create([
                 'name' => 'Super Admin',
