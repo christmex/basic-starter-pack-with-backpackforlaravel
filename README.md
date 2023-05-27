@@ -37,9 +37,13 @@ Easy right? you found any errors or any questions, let me know guys, cheers.
 
 
 ## TODO
-- [ ] Add extending model and controller for users
-- [ ] Add extending model and controller for roles
-- [ ] Add extending model and controller for permissions
-- [ ] Add exception [reference](https://spatie.be/docs/laravel-permission/v5/advanced-usage/exceptions)
-- [ ] Defining a super admin [reference](https://spatie.be/docs/laravel-permission/v5/basic-usage/super-admin)
-- [x] add Post CRUD example
+- [x] Add extending controller for users
+- [x] Add extending model for users
+- [x] Add extending controller for roles
+- [x] Add extending model for roles
+- [x] Add extending controller for permissions
+- [x] Add extending model for permissions
+- [ ] Add exception [reference](https://spatie.be/docs/laravel-permission/v5/advanced-usage/exceptions), IDK maybe it's not that important for now?
+- [x] Defining a super admin [reference](https://spatie.be/docs/laravel-permission/v5/basic-usage/super-admin)
+- [x] Add Post CRUD example
+- [ ] Add PostPolicy for example, and authorize everything
