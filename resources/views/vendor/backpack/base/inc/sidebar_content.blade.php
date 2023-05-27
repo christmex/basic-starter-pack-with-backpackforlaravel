@@ -11,3 +11,4 @@
     </ul>
 </li>
 @endif
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('post') }}"><i class="nav-icon la la-blog"></i> Posts</a></li>
