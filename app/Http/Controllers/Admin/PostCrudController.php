@@ -39,7 +39,7 @@ class PostCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        // $this->authorize('view', backpack_auth()); //cause error, authorize doesn't exist
+        // $this->authorize('view', backpack_user()); //cause error, authorize doesn't exist
         abort_unless(backpack_user()->can('posts.view'),403);
         CRUD::addColumn([
             'name' => 'user_id',

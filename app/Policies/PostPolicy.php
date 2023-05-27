@@ -22,9 +22,9 @@ class PostPolicy
     public function view(User $user): bool
     {
         
-        // if (backpack_user()->can('posts.view')) {
-        //     return true;
-        // }
+        if ($user->can('posts.view')) {
+            return true;
+        }
     }
 
     public function create(User $user): bool
