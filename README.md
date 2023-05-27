@@ -28,6 +28,7 @@ composer install
 php artisan key:generate
 ```
 6. run ``` php artisan migrate --seed ``` to create the table and insert the default credential
+7. Dont forget to remove the remote git with ``` git remote remove origin ```
 7. Login [Your-url]/admin, you can find the credential inside seeder
 
 <br>
@@ -40,3 +41,4 @@ Easy right? you found any errors or any questions, let me know guys, cheers.
 - Add extending model and controller for roles
 - Add extending model and controller for permissions
 - Add exception [reference](https://spatie.be/docs/laravel-permission/v5/advanced-usage/exceptions)
+- Defining a super admin [reference](https://spatie.be/docs/laravel-permission/v5/basic-usage/super-admin)
