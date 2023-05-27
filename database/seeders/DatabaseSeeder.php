@@ -18,17 +18,21 @@ class DatabaseSeeder extends Seeder
             // Reset cached roles and permissions
             app()[\Spatie\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
             
-            $role = Role::firstOrCreate(['name' => 'administrator']);
-            $permission = Permission::firstOrCreate(['name' => 'manage all']);
-            $role->givePermissionTo('manage all');
+            $role = Role::Create(['name' => 'Super Admin']);
 
-            $super_admin = \App\Models\User::firstOrCreate([
+            $super_admin = \App\Models\User::Create([
                 'name' => 'Super Admin',
                 'email' => 'super@admin.com',
                 'password' => bcrypt('superzzz'),
             ]);
 
-            $super_admin->assignRole('administrator');
+            $user = \App\Models\User::Create([
+                'name' => 'user',
+                'email' => 'user@admin.com',
+                'password' => bcrypt('superzzz'),
+            ]);
+
+            $super_admin->assignRole('Super Admin');
         } catch (\Throwable $th) {
             //throw $th;
         }
